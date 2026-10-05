@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- Copie publique « Présentation ROI » (GitHub Pages). Entrée : ./main.tsx.
+     Le bootstrap data-theme est le MÊME que celui de index.html racine (clé
+     'izit-theme-mode' partagée) : la démo suit le thème stocké ou l'OS,
+     exactement comme l'app interne. -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Présentation ROI GTB — démo</title>
+    <meta
+      name="description"
+      content="Démo interactive : retour sur investissement GTB — investissement, économies, payback et primes CEE."
+    />
+    <meta name="robots" content="noindex" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2310b981'/%3E%3Cpath d='M9 22V10h3l4 6 4-6h3v12h-3v-6.5L16 20l-4-4.5V22z' fill='white'/%3E%3C/svg%3E"
+    />
+    <script>
+      (function () {
+        try {
+          var m = localStorage.getItem('izit-theme-mode');
+          var dark =
+            m === 'dark' ||
+            (m === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/demo-roi-gtb/assets/index-CqeFceW8.js"></script>
+    <link rel="stylesheet" crossorigin href="/demo-roi-gtb/assets/index-ql7Iuc4V.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
