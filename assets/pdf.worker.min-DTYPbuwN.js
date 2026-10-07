@@ -1,0 +1,1 @@
+var e=`/demo-roi-gtb/assets/pdf.worker.min-D39lNQBd.mjs`;export{e as default};
